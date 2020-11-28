@@ -1,10 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>LED control</title>
-</head>
-<body>
-    <h1>LED can be controlled by python.</h1>
-</body>
-</html>
+{% extends 'led_control/base.html' %}
+
+{% block static %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'led_control/index.css' %}">
+{% endblock %}
+
+
+{% block body %}
+    <main>
+
+        <section id="cards">
+
+            <div class="card card1">
+                <h1>About</h1>
+                <table style="width:100%">
+                    <tr>
+                        <th>Device</th>
+                        <td>Raspberry Pi 3</td>
+                    </tr>
+                    <tr>
+                        <th>Name</th>
+                        <td>rootz491</td>
+                    </tr>
+                    <tr>
+                        <th>LED pin</th>
+                        <td>pin 15</td>
+                    </tr>
+                    <tr>
+                        <th>Color</th>
+                        <td style="color: green;">GREEN</td>
+                        <!-- or red. if light is OFF -->
+                        <!-- <td style="color: red;">RED</td> -->
+                    </tr>
+                    <tr>
+                        <th>Power</th>
+                        <td>1.5v</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="card card2">
+                <h1>Control</h1>
+                <form action="{% url 'led_control:update' %}" method="POST">
+                    {% csrf_token %}
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Leave a message here [optional]"></textarea>
+                    <div class="switchWrapper">
+                        <input type="checkbox" name="switch" id="switch"  {% if data.is_active %} checked=true {% endif %} hidden>
+                        <label id="switchLabel" for="switch">
+                            <span></span>
+                        </label>
+                    </div>
+                    <div class="btnWrapper">
+                        <button type="submit">send request</button>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+
+        <section id="state">
+            <h1>CURRENT STATE:
+                {% if data.is_active == True %}
+                    <span style="color: green">{{ data }} <!-- ON --> </span>
+                {% else %}
+                    <span style="color: red">{{ data }} <!-- OFF --> </span>
+                {% endif %}
+            </h1>
+        </section>
+
+    </main>
+{% endblock %}

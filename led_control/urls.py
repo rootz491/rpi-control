@@ -4,5 +4,6 @@ from .views import *
 app_name = 'led_control'
 
 urlpatterns = [
-        path('', index, name='index')
+        path('', index, name='index'),
+        path('update', update, name='update'),
 ]

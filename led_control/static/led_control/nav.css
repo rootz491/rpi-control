@@ -1,0 +1,100 @@
+:root {
+    --blue: #C5E3F6;
+    --dark-pink: #FC5C9C;
+    --light-pink: #FCCDE2
+}
+
+
+/* nav starts */
+nav {
+    width: 100%;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--light-pink);
+}
+
+#sideNav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1em;
+    font-size: 1.5em;
+}
+
+
+#sideNav a:hover {
+    font-weight: 1000;
+}
+
+#hamburger {
+    display: none;
+}
+
+#hamburgerLabel {
+    display: none;
+    position: absolute;
+    top: 2.3em;
+    left: 1em;
+    cursor: pointer;
+    z-index: 10;
+    background: black;
+    width: 35px;
+    height: 7px;
+}
+
+#hamburgerLabel span {
+    position: relative;
+}
+
+#hamburgerLabel span::after, #hamburgerLabel span::before {
+    content: '';
+    width: 35px;
+    height: 7px;
+    background: black;
+    position: absolute;
+}
+
+#hamburgerLabel span::after {
+    top: -10px;
+}
+
+#hamburgerLabel span::before {
+    top: 10px;
+}
+
+#hamburger:checked + #sideNav {
+    transform: translateX(0px);
+}
+
+
+
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: row-reverse;
+        margin-bottom: 3em;
+        background: var(--blue);
+    }
+    #sideNav {
+        position: fixed;
+        top: 0;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(-100%);
+        transition: all .4s ease;
+        background-color: var(--light-pink);
+        font-size: 2rem;
+        height: 100vh;
+        width: 100%;
+        z-index: 5;
+    }
+    #hamburgerLabel {
+        display: block;
+    }
+
+
+}
+
+
+/* nav ends */

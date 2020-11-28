@@ -1,0 +1,126 @@
+:root {
+    --blue: #C5E3F6;
+    --dark-pink: #FC5C9C;
+    --light-pink: #FCCDE2
+}
+
+
+.raspberryPi {
+    display: grid;
+    place-content: center;
+    margin: 2em 0;
+    margin-bottom: 5em;
+}
+
+.raspberryPi > h1 {
+    padding: .7em 1.5em;
+    border: 7px solid var(--dark-pink);
+    color: var(--dark-pink);
+    text-align: center;
+    border-radius: 20px;
+}
+
+section#cards {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 400px));
+    gap: 2em;
+    margin: 2em;
+}
+
+.card {
+    background: var(--light-pink);
+    border: 1px solid var(--dark-pink);
+    /* shadow */
+    -webkit-box-shadow: 10px 10px 11px 0px rgba(48, 50, 50, 0.96);
+    -moz-box-shadow:    10px 10px 11px 0px rgba(48, 50, 50, 0.96);
+    box-shadow:         10px 10px 11px 0px rgba(48, 50, 50, 0.96);
+}
+
+td, th {
+    padding: 10px;
+    font-size: 1.4em;
+    padding-left: 2em;
+    text-align: left;
+}
+
+
+.card h1 {
+    color: var(--dark-pink);
+    margin: .5em;
+    text-align: center;
+    font-size: 2em;
+}
+
+.card2 {
+    padding-bottom: 1em;
+}
+
+.card2 form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.btnWrapper {
+    display: flex;
+}
+
+textarea {
+    padding: 10px;
+    margin: 0 1em;
+}
+
+textarea::selection {
+    outline: none;
+}
+
+button {
+    margin: auto;
+    padding: 6px 14px;
+    font-size: 1.5em;
+}
+
+.switchWrapper {
+    display: grid;
+    place-content: center;
+}
+
+.switchWrapper label {
+    width: 90px;
+    height: 20px;
+    padding: 1em;
+    border: 7px solid black;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.switchWrapper label > span {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    padding: .7em;
+    border-radius: 100%;
+    background-color: red;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease;
+}
+
+.switchWrapper input:checked + label > span {
+    background-color: green;
+    transform: translate(150%, -50%);
+}
+
+section#state {
+    text-align: center;
+    padding: 1em;
+    font-size: 2.5em;
+    color: var(--dark-pink);
+}
+
+@media screen and (max-width: 370px) {
+    section#state {
+        font-size: 1.5em;
+    }
+}
