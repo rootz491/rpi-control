@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b0cdc6e-3ea4-4311-9575-b7f49b3277b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../led_control/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../led_control/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../led_control/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../led_control/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../led_control/templates/led_control/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../led_control/templates/led_control/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../led_control/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../led_control/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../led_control/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../led_control/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rpi_control/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../rpi_control/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
