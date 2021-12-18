@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b0cdc6e-3ea4-4311-9575-b7f49b3277b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +19,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ksYSgfVxA4HuL3ohpe3ujhWuXv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -87,6 +88,10 @@
       <screen x="0" y="26" width="1600" height="850" />
     </state>
     <state x="258" y="109" width="1084" height="705" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.26.1600.850@0.26.1600.850" timestamp="1606491087027" />
+    <state x="516" y="256" width="557" height="387" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608734285716">
+      <screen x="0" y="26" width="1600" height="850" />
+    </state>
+    <state x="516" y="256" width="557" height="387" key="#com.intellij.fileTypes.FileTypeChooser/0.26.1600.850@0.26.1600.850" timestamp="1608734285716" />
     <state x="289" y="86" key="SettingsEditor" timestamp="1606491049805">
       <screen x="0" y="26" width="1600" height="850" />
     </state>
